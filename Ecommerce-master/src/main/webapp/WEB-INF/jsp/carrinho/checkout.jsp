@@ -36,9 +36,11 @@
 
 		<!-- ################################################################################# -->
 		<!-- ################################################################################# -->
-		<h1><fmt:message key="meu.carrinho" /> (${tamanho})</h1>
+		
 
 		<div class="col-md-8 cart-items">
+		</br>
+		<h1><fmt:message key="meu.carrinho" /> (${tamanho})</h1>
 			<c:forEach var="carrinho" items="${listaCarrinho}">
 				<div class="cart-header">
 					<div class="close1">

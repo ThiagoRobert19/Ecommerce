@@ -112,8 +112,6 @@ addEventListener("load", function() {setTimeout(hideURLbar, 0); }, false); funct
 
 									</ul></li> <!--AZUL--></div></div>
 							<div class="login-bars">
-								
-
 								<c:if test="${not empty clienteLogado.cliente.usuario}">
 								<span style="color:red;">Bem Vindo :</span>
 									<b>  ${clienteLogado.cliente.usuario}       </b>
@@ -193,7 +191,7 @@ addEventListener("load", function() {setTimeout(hideURLbar, 0); }, false); funct
 							<span class="sdt_active"></span>
 							<span class="sdt_wrap">
 								<span class="sdt_link">New Shoes</span>
-								<span class="sdt_descr">Seja um de nossos clientes</span>
+								<span class="sdt_descr"><fmt:message key="seja.cliente" /></span>
 							</span>
 						</a>
 					</li>
@@ -203,25 +201,24 @@ addEventListener("load", function() {setTimeout(hideURLbar, 0); }, false); funct
 							<span class="sdt_active"></span>
 							<span class="sdt_wrap">
 								<span class="sdt_link"><fmt:message key="categoria.categoria" /></span>
-								<span class="sdt_descr">Conheça nossos produtos</span>
+								<span class="sdt_descr"><fmt:message key="conheca.produto" /></span>
 							</span>
 						</a>
 						<div class="sdt_box">
-								<a href="<c:url value='/CategoriaProduto?categoria=ESPORTE'/>"><fmt:message
-																			key="esporte.esporte" /></a>
-								<a href="<c:url value='/CategoriaProduto?categoria=CASUAL'/>"><fmt:message
-																			key="casual.casual" /></a>
-								<a href="<c:url value='/CategoriaProduto?categoria=SOCIAL'/>"><fmt:message
-																			key="social.social" /></a>
-								<a href="<c:url value='/CategoriaProduto?categoria=SANDALIA'/>"><fmt:message
-																			key="sandalia.sandalia" /></a>
-								<a href="#<c:url value='/CategoriaProduto?categoria=RASTEIRINHA'/>"><fmt:message
-																			key="rasteirinha.rasteirinha" /></a>
-								<a href="<c:url value='/CategoriaProduto?categoria=BOTA'/>"><fmt:message
-																			key="bota.bota" /></a>
-								<a href="<c:url value='/CategoriaProduto?categoria=SAPATENIS'/>"><fmt:message
-					
-																			key="sapatenis.sapatenis" /></a>
+								<a href="<c:url value='/CategoriaProduto?categoria=ESPORTE'/>">
+								<fmt:message key="esporte.esporte" /></a>
+								<a href="<c:url value='/CategoriaProduto?categoria=CASUAL'/>">
+								<fmt:message key="casual.casual" /></a>
+								<a href="<c:url value='/CategoriaProduto?categoria=SOCIAL'/>">
+								<fmt:message key="social.social" /></a>
+								<a href="<c:url value='/CategoriaProduto?categoria=SANDALIA'/>">
+								<fmt:message key="sandalia.sandalia" /></a>
+								<a href="<c:url value='/CategoriaProduto?categoria=RASTEIRINHA'/>">
+								<fmt:message key="rasteirinha.rasteirinha" /></a>
+								<a href="<c:url value='/CategoriaProduto?categoria=BOTA'/>">
+								<fmt:message key="bota.bota" /></a>
+								<a href="<c:url value='/CategoriaProduto?categoria=SAPATENIS'/>">
+								<fmt:message key="sapatenis.sapatenis" /></a>
 						</div>
 					</li>
 					<li>
@@ -230,7 +227,7 @@ addEventListener("load", function() {setTimeout(hideURLbar, 0); }, false); funct
 							<span class="sdt_active"></span>
 							<span class="sdt_wrap">
 								<span class="sdt_link"><fmt:message key="masculino.masculino" /></span>
-								<span class="sdt_descr">Calçado para os homens</span>
+								<span class="sdt_descr"><fmt:message key="conheca.homem" /></span>
 							</span>
 						</a>
 					</li>
@@ -240,7 +237,7 @@ addEventListener("load", function() {setTimeout(hideURLbar, 0); }, false); funct
 							<span class="sdt_active"></span>
 							<span class="sdt_wrap">
 								<span class="sdt_link"><fmt:message key="feminino.feminino" /></span>
-								<span class="sdt_descr">Calçado para as mulheres</span>
+								<span class="sdt_descr"><fmt:message key="conheca.mulher" /></span>
 							</span>
 						</a>
 					</li>
@@ -250,14 +247,15 @@ addEventListener("load", function() {setTimeout(hideURLbar, 0); }, false); funct
 							<span class="sdt_active"></span>
 							<span class="sdt_wrap">
 								<span class="sdt_link"><fmt:message key="infantil.infantil" /></span>
-								<span class="sdt_descr">Calçado para as crianças</span>
+								<span class="sdt_descr"><fmt:message key="conheca.crianca" /></span>
 							</span>
 						</a>
 					</li>
 					
 				</ul>
 
-
+</br></br></br></br></br></br></br>
+	
 
 
         
